@@ -149,58 +149,90 @@ function changeImageGallery(step) {
   
 
 // CONTENT LOAD
-document.addEventListener("DOMContentLoaded", function() {
-    var aboutSection = document.querySelector(".about-section");
+// document.addEventListener("DOMContentLoaded", function() {
+//     var aboutSection = document.querySelector(".about-section");
 
-    var observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            aboutSection.classList.add("appear");
-        }
-    }, { threshold: 0.5 }); // Adjust the threshold based on your preference
+//     var observer = new IntersectionObserver(function(entries) {
+//         if (entries[0].isIntersecting) {
+//             aboutSection.classList.add("appear");
+//         }
+//     }, { threshold: 0.5 }); // Adjust the threshold based on your preference
 
-    observer.observe(aboutSection);
-});
-document.addEventListener("DOMContentLoaded", function() {
+//     observer.observe(aboutSection);
+// });
+// document.addEventListener("DOMContentLoaded", function() {
     
-    var structureSection = document.querySelector(".structure");
-    var attractionsSection = document.querySelector(".attractions");
-    var gallerySection = document.querySelector(".gallery");
-    var reserveSection = document.querySelector(".bg");
+//     var structureSection = document.querySelector(".structure");
+//     var attractionsSection = document.querySelector(".attractions");
+//     var gallerySection = document.querySelector(".gallery");
+//     var reserveSection = document.querySelector(".bg");
 
-    var observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            structureSection.classList.add("appear");
-        }
-    }, { threshold: 0.5 });
+//     var observer = new IntersectionObserver(function(entries) {
+//         if (entries[0].isIntersecting) {
+//             structureSection.classList.add("appear");
+//         }
+//     }, { threshold: 0.5 });
 
-    var observer2 = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            attractionsSection.classList.add("appear");
-        }
-    }, { threshold: 0.5 });
+//     var observer2 = new IntersectionObserver(function(entries) {
+//         if (entries[0].isIntersecting) {
+//             attractionsSection.classList.add("appear");
+//         }
+//     }, { threshold: 0.5 });
 
-    var observer3 = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            gallerySection.classList.add("appear");
-        }
-    }, { threshold: 0.5 });
+//     var observer3 = new IntersectionObserver(function(entries) {
+//         if (entries[0].isIntersecting) {
+//             gallerySection.classList.add("appear");
+//         }
+//     }, { threshold: 0.5 });
 
-    var observer4 = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            reserveSection.classList.add("appear");
-        }
-    }, { threshold: 0.5 });
+//     var observer4 = new IntersectionObserver(function(entries) {
+//         if (entries[0].isIntersecting) {
+//             reserveSection.classList.add("appear");
+//         }
+//     }, { threshold: 0.5 });
 
-    observer.observe(structureSection);
-    observer2.observe(attractionsSection);
-    observer3.observe(gallerySection);
-    observer4.observe(reserveSection);
-});
+//     observer.observe(structureSection);
+//     observer2.observe(attractionsSection);
+//     observer3.observe(gallerySection);
+//     observer4.observe(reserveSection);
+// });
 
-// CONTENT LOAD ATTRACTIONS
+// // CONTENT LOAD ATTRACTIONS
+// document.addEventListener("DOMContentLoaded", function() {
+//     var cardElements = document.querySelectorAll('.card-page');
+//     const isDesktop = window.innerWidth > 768; // Set your desired threshold
+
+//     var options = {
+//         root: null,
+//         rootMargin: '0px',
+//         threshold: 0.2
+//     };
+
+//     function cardIntersection(entries, observer) {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.add('visible');
+//                 observer.unobserve(entry.target);
+//             }
+//         });
+//     }
+
+//     if (isDesktop) {
+//         var cardObserver = new IntersectionObserver(cardIntersection, options);
+
+//         cardElements.forEach(card => {
+//             cardObserver.observe(card);
+//         });
+//     }
+// });
+
+//CONTENT FADE IN ABOUT PAGE
 document.addEventListener("DOMContentLoaded", function() {
+    // Check if it's a mobile device
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
     var cardElements = document.querySelectorAll('.card-page');
-    const isDesktop = window.innerWidth > 768; // Set your desired threshold
+    var fadeElements = document.querySelectorAll(".fade-in");
 
     var options = {
         root: null,
@@ -217,25 +249,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    if (isDesktop) {
-        var cardObserver = new IntersectionObserver(cardIntersection, options);
-
-        cardElements.forEach(card => {
-            cardObserver.observe(card);
-        });
-    }
-});
-//CONTENT FADE IN ABOUT PAGE
-document.addEventListener("DOMContentLoaded", function () {
-    const fadeElements = document.querySelectorAll(".fade-in");
-    const isDesktop = window.innerWidth > 768; // Set your desired threshold
-
     function checkVisibility() {
-        if (!isDesktop) {
-            // If not desktop, don't apply the effect
-            return;
-        }
-
         fadeElements.forEach((element) => {
             const position = element.getBoundingClientRect();
 
@@ -245,13 +259,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Initial check on page load
-    checkVisibility();
+    if (!isMobile) {
+        var cardObserver = new IntersectionObserver(cardIntersection, options);
+        cardElements.forEach(card => cardObserver.observe(card));
 
-    if (isDesktop) {
         window.addEventListener("scroll", checkVisibility);
+        checkVisibility();
     }
 });
+
 
 // BURGUER MENU
 function toggleMenu() {

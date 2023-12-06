@@ -474,9 +474,9 @@ max-width: 120%;
 
 
 /* ------------------------- ABOUT */
-.about-section {
+/* .about-section {
     opacity: 0;
-    transform: translateY(20px); /* Initial position, adjust as needed */
+    transform: translateY(20px); s
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 .structure,
@@ -496,7 +496,7 @@ max-width: 120%;
 .bg.appear {
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 
 .about {
