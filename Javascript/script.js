@@ -42,26 +42,26 @@ function changeImageGallery(step) {
         // header.style.height = "150px";
     }
 });
-document.addEventListener("scroll", function() {
-    var activePage = document.getElementById("active-page");
-    var scrollPosition = window.scrollY;
+// document.addEventListener("scroll", function() {
+//     var activePage = document.getElementById("active-page");
+//     var scrollPosition = window.scrollY;
 
-    // Define a threshold value for when to change the background color
-    var threshold = 50;
+//     // Define a threshold value for when to change the background color
+//     var threshold = 50;
 
-    if (scrollPosition > threshold) {
-        // Change the background color and border radius of the active page
-        activePage.style.backgroundColor = "#EAF1F7";
-        activePage.style.borderRadius = "16px";
-        activePage.style.border = "4px solid #EAF1F7";
-    } else {
-        // Revert to the default background color and border radius
-        activePage.style.backgroundColor = "#EAF1F7";
-        activePage.style.borderRadius = "0px 0 0px 0px";
-        activePage.style.border = "4px solid #EAF1F7";
+//     if (scrollPosition > threshold) {
+//         // Change the background color and border radius of the active page
+//         activePage.style.backgroundColor = "#EAF1F7";
+//         activePage.style.borderRadius = "16px";
+//         activePage.style.border = "4px solid #EAF1F7";
+//     } else {
+//         // Revert to the default background color and border radius
+//         activePage.style.backgroundColor = "#EAF1F7";
+//         activePage.style.borderRadius = "0px 0 0px 0px";
+//         activePage.style.border = "4px solid #EAF1F7";
         
-    }
-});
+//     }
+// });
 
 
 
@@ -90,61 +90,62 @@ document.addEventListener("scroll", function() {
     });
   });
 
-//TITLE SMOOTLHY APPEARS
-document.addEventListener("DOMContentLoaded", function () {
-    // Wait for the DOM content to be fully loaded
-  
+  document.addEventListener("DOMContentLoaded", function () {
     // Get the title and button elements
     var imgTitle = document.getElementById("img-title");
     var imgButton = document.getElementById("img-button");
   
-    // Add a delay for a better visual effect
-    setTimeout(function () {
-      // Clear the existing text content
-      imgTitle.textContent = "";
-  
-      // Show the title with a typing effect
-      typeText(imgTitle, "The Mother Nature Camping");
-      imgTitle.classList.remove("hidden");
-      imgTitle.style.opacity = 1;
-  
-      // Show the button with a fade-in effect after a longer delay (e.g., 500 milliseconds)
+    // Check if elements exist before proceeding
+    if (imgTitle && imgButton) {
+      // Add a delay for a better visual effect
       setTimeout(function () {
-        imgButton.classList.remove("hidden");
-        imgButton.style.opacity = 1;
-      }, 2500);
-    }, 300);
+        // Clear the existing text content
+        imgTitle.textContent = "";
   
-    function typeText(element, text) {
-      var index = 0;
-      var typingSpeed = 100; // Adjust typing speed in milliseconds
+        // Show the title with a typing effect
+        typeText(imgTitle, "The Mother Nature Camping");
+        imgTitle.classList.remove("hidden");
+        imgTitle.style.opacity = 1;
   
-      function typeCharacter() {
-        element.textContent += text[index];
-        index++;
+        // Show the button with a fade-in effect after a longer delay (e.g., 500 milliseconds)
+        setTimeout(function () {
+          imgButton.classList.remove("hidden");
+          imgButton.style.opacity = 1;
+        }, 2500);
+      }, 300);
   
-        if (index < text.length) {
-          setTimeout(typeCharacter, typingSpeed);
+      function typeText(element, text) {
+        var index = 0;
+        var typingSpeed = 100; // Adjust typing speed in milliseconds
+  
+        function typeCharacter() {
+          element.textContent += text[index];
+          index++;
+  
+          if (index < text.length) {
+            setTimeout(typeCharacter, typingSpeed);
+          }
         }
-      }
   
-      typeCharacter();
+        typeCharacter();
+      }
     }
   });
   
   // Add a media query for mobile styles
   if (window.matchMedia("(max-width: 768px)").matches) {
-    var imgTitle = document.getElementById("img-title");
-    var imgButton = document.getElementById("img-button");
+    var mobileImgTitle = document.getElementById("img-title");
+    var mobileImgButton = document.getElementById("img-button");
   
-    imgTitle.style.fontSize = "26px"; // Adjust the font size for mobile screens
-    imgButton.style.fontSize = "14px"; // Adjust the font size for the button on mobile screens
-    imgButton.style.height = "15px";
-    imgButton.style.width = "240px";
-    imgButton.style.color = "#1F311F";
-
-}
-  
+    // Check if elements exist before proceeding
+    if (mobileImgTitle && mobileImgButton) {
+      mobileImgTitle.style.fontSize = "26px"; // Adjust the font size for mobile screens
+      mobileImgButton.style.fontSize = "14px"; // Adjust the font size for the button on mobile screens
+      mobileImgButton.style.height = "15px";
+      mobileImgButton.style.width = "240px";
+      mobileImgButton.style.color = "#1F311F";
+    }
+  }
   
 
 // CONTENT LOAD
@@ -244,12 +245,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Initial check on page load
+    checkVisibility();
+
     if (isDesktop) {
         window.addEventListener("scroll", checkVisibility);
-        // Initial check on page load
-        checkVisibility();
     }
 });
+
 // BURGUER MENU
 function toggleMenu() {
     const headerMenu = document.querySelector('.header-menu');
