@@ -28,25 +28,6 @@ p{
     transition: 1.2s;
 }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-}
-
-/* Ensure that the body and html elements take up 100% of the viewport height */
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-/* Add a dummy element to provide scrolling space on mobile */
-.scroll-dummy {
-    height: 200vh; /* Adjust as needed to create sufficient scrolling space */
-}
 
 
 @media (max-width: 600px){

@@ -196,11 +196,45 @@ document.addEventListener("DOMContentLoaded", function() {
     observer4.observe(reserveSection);
 });
 
+// CONTENT LOAD ATTRACTIONS
+document.addEventListener("DOMContentLoaded", function() {
+    var cardElements = document.querySelectorAll('.card-page');
+    const isDesktop = window.innerWidth > 768; // Set your desired threshold
+
+    var options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    };
+
+    function cardIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    if (isDesktop) {
+        var cardObserver = new IntersectionObserver(cardIntersection, options);
+
+        cardElements.forEach(card => {
+            cardObserver.observe(card);
+        });
+    }
+});
 //CONTENT FADE IN ABOUT PAGE
 document.addEventListener("DOMContentLoaded", function () {
     const fadeElements = document.querySelectorAll(".fade-in");
+    const isDesktop = window.innerWidth > 768; // Set your desired threshold
 
     function checkVisibility() {
+        if (!isDesktop) {
+            // If not desktop, don't apply the effect
+            return;
+        }
+
         fadeElements.forEach((element) => {
             const position = element.getBoundingClientRect();
 
@@ -210,12 +244,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", checkVisibility);
-    window.addEventListener("resize", checkVisibility); // Handle resize events for mobile browsers
-    // Initial check on page load
-    checkVisibility();
+    if (isDesktop) {
+        window.addEventListener("scroll", checkVisibility);
+        // Initial check on page load
+        checkVisibility();
+    }
 });
-
 // BURGUER MENU
 function toggleMenu() {
     const headerMenu = document.querySelector('.header-menu');
