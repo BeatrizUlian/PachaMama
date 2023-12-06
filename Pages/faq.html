@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:ital,wght@0,400;0,600;1,500&family=Nunito:wght@400;500;700&family=Playfair+Display&family=Space+Mono&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <title>Camping PachaMama - FAQ</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-bg" id="header">
+        <div class="header">
+            <a href="../index.html" id="logo"><img src="../Images/Logo.svg" alt="logo" id="logo-img"></a>
+    
+            <nav aria-label="primary">
+                <ul class="header-menu">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./structure.html">Facilities</a></li>
+                    <li><a href="./attractions.html">Attractions</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./reserve.html">Reserve</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Burger menu icon for mobile -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+   
+       <!-- MAIN IMAGE -->
+
+       <main class="bg-about">
+           <div class="img">
+               <img id="heroimg" src="../Images/FAQ-Page/main-image.png" alt="Image of morro da baleia">
+           </div>
+
+   <!-- MAIN SECTION-->
+
+   <div class="faq-page">
+
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-page-box">
+        <div class="faq-page-text fade-in">
+            <h5>Rules</h5>
+            <p id="bold">It's forbidden:</p>
+            <ul class="about-page-ul">
+                <li>Pull extension from the house; There is a covered place with a power plug for this;</li>
+                <li>Household appliances (grills, microwaves and electric ovens);</li>
+                <li>Leaving dirty dishes in the kitchen;</li>
+                <li>Place pan, alcoholic beverage and 5-liter bottle in the refrigerator;</li>
+                <li> Music on an electronic device or car stereo;</li>
+                <li> Noise after 10pm;</li>
+                <li> Make a fire OUTSIDE the designated location;</li>
+                <li> Throw paper and absorbent into the vases.</li>
+            </ul>
+        </div>
+    </div>
+    <p></p>
+   
+    <div class="faq-page-faq fade-in">
+        <div class="question" onclick="toggleAnswer('answer1')">
+            <p id="bold">1. When is the best time to visit Chapada of Veadeiros?</p>
+            <div class="answer" id="answer1">
+                <p>The region has a dry season (from April to September) and the rainy season (from October to March). There are tours that are better during the flood season and others in the dry season. For example, the Canyons, the Couros Falls, the Segredo Waterfall among others, are impassable in the rain, while Loquinhas and the Anjos and Arcanjos Waterfalls are too thin in the drought. There is an appropriate itinerary for each season.</p>
+            </div>
+        </div>
+
+    <div class="question" onclick="toggleAnswer('answer2')">
+        <p id="bold">2. How far is the campsite from the attractions?</p>
+        <div class="answer" id="answer2"> <p>Camping PachaMama is between the city of Alto Paradise and the Village of São Jorge. 17km and 19km respectively. On the highway that leads to the Park Nacional, at the foot of Morro da Baleia, 4 km from Maitreya's Garden. 9 km from Almécegas and São Bento Waterfalls; 14 km from Vale da Lua; 20 km from the National Park; 22 km from Raizama; 23 km from Morada do Sol; 24 km from Loquinhas; 26 km from Cristal.</p>
+    </div>
+        </div>
+
+     <div class="question" onclick="toggleAnswer('answer3')">
+        <p id="bold">3. What to take camping?</p>
+        <div class="answer" id="answer3"><p>1. Firewood for fires, to avoid deforestation of the land;</p>
+            <p>2. Swimming/snorkeling goggles as some waterfalls are more beautiful from below;</p>
+                <p>3. Warm clothes and blankets, as it is colder at night;</p>
+           <p> 4. Sunscreen;</p>
+            <p>  5. Repellent;</p>
+          <p>  6. Sunglasses, cap or hat for the trails (especially in the National Park);</p>
+           <p> 7. Pillow;</p>
+           <p> 8. Flashlight;</p>
+          <p>  9. Earplugs, as it is common for other people to snore nearby;</p>
+          <p>  10. Cash, as access to the bank is limited and not everywhere accepts cards;</p>
+           <p> 11. A ground cloth to clean the tent before storing;</p>
+           <p> 12. Personal plates, cutlery, glasses and tea towels, as a preventive measure against COVID-19.</p>
+           <p> 13. Your tent, mattress or sleeping bag and personal hygiene items.</p>
+     </div>
+     </div>
+
+     <div class="question" onclick="toggleAnswer('answer4')">
+        <div class="answer" id="answer4"><p id="bold">4. How is the reservation made?</p>
+        <p>Reservations are made exclusively using the RESERVE link on this website.
+            An advance deposit of 100% of the amount is required.</p>
+     </div>
+     </div>
+     
+     <div class="question"onclick="toggleAnswer('answer5')">
+        <p id="bold">5. Is it safe to take children and the elderly?</p>
+        <div class="answer" id="answer5"> <p>Yes. The campsite is all grassy, ​​with a safe space for children. For the elderly, it is also an easily accessible place. The child price is for ages zero to 12. Due to the greater need for structure and care for young children and babies, we include them in child values. In the pool, children must be accompanied by an adult. There are some very suitable waterfalls to take them to.</p>
+     </div>
+     </div>
+
+     <div class="question" onclick="toggleAnswer('answer6')">
+        <p id="bold">6. Is it possible to visit Chapada dos Veadeiros without a car?</p>
+       <div class="answer" id="answer6"> <p>RNo. Those who do not have their own car will depend on guides with cars or rides on the highway.
+            There is no public transport to the attractions. Chapada dos Veadeiros involves 5 municipalities.
+            The main attractions are all kilometers away. Most of the waterfalls are in Alto Paraíso (Vila de São Jorge) and Cavalcante. São Jorge is 36 km from Alto Paraíso and Cavalcante is 91 km away.
+            Even in the waterfalls that are just a few kilometers from the city or town, there is no place for pedestrians on the roads. The only road transport company to Alto Paraíso is Real Expresso - Phone: (61) 3234-8774</p>
+     </div>
+     </div>
+
+     <div class="question" onclick="toggleAnswer('answer7')">
+        <p id="bold">7. Is there a covered space for tents?</p>
+        <div class="answer" id="answer7"><p>There is a 40m² roof with a light point (sockets and lamps) with capacity for 6 to 7 tents and we have a covered kiosk also available for tents. There is no additional price to use the location or reservations. It is first come, first served, however, they rarely occupy the entire space.</p>
+     </div>
+     </div>
+
+     <div class="question" onclick="toggleAnswer('answer8')">
+        <p id="bold">8. What is the camping reservation cancellation policy?</p>
+       <div class="answer" id="answer8"><p>If you cancel up to 2 days in advance (that is, until 9 am two days before the reservation date), 80% of the amount deposited will be refunded. After the deadline (less than 1 day before booking or after check-in time), the amount deposited will no longer be refunded. This policy is necessary as our places fill up far in advance and we deny hundreds of reservations due to this. When a person quits at the last minute, it is no longer possible to replace that vacancy and not only do we lose the daily rate during a period of high demand, we also lose the opportunity for more people to get to know our business and gain more customer loyalty.</p>
+     </div>
+     </div>
+
+     <div class="question" onclick="toggleAnswer('answer9')">
+        <p id="bold">9. Does the Camping accept MotorHomes?</p>
+        <div class="answer" id="answer9"><p>Yes. There is a tap and power plug available.</p>
+     </div>
+     </div>
+   
+     <div class="question" onclick="toggleAnswer('answer10')">
+        <p id="bold">10. Do you allow pets at Camping PachaMama and Waterfalls?</p>
+        <div class="answer" id="answer10"><p>We do not accept pets at the campsite and the waterfalls also do not allow pets, regardless of size..</p>
+     </div>
+    </div>
+
+   </div>
+</div>
+<!-- IMAGES FLOATING -->
+<div class="about-page-images">
+    <img src="../Images/About-Page/leaf1.png" class="leaf1-1">
+    <img src="../Images/About-Page/leaf2.png" class="leaf2-2">
+  </div>
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div>
+        <h5>Location</h5>
+        <p>Alto Paraiso de Goias - GO</p>
+        <p>Chapada dos Veadeiros</p>
+        <p>73770-000</p>
+
+    </div>
+
+    <div>
+        <h5>Stay Connected</h5>
+        <img src="../Images/facebookicon.png">
+        <img src="../Images/instagramicon.png">
+        <img src="../Images/youtubeicon.png">
+    </div>
+</footer>
+
+</main>
+<script src="../Javascript/script.js"></script>
+</body>
+
+</html>

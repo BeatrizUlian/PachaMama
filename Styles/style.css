@@ -1,0 +1,1337 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #EAF1F7, #BFC2B4);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: "Nunito";
+    margin: 0px;
+}
+#reserve {
+    border: 2px solid #BB8B38;
+    padding: 10px;
+    border-radius: 10px;
+}
+.icons:hover{
+    fill:  #BB8B38;
+    transition: 1.2s;
+}
+@media (max-width: 600px){
+    p { font-size: 16px;}
+}
+
+#active-page{
+
+padding: 5px;
+/* background-color: #EAF1F7;
+    border-bottom: 4px solid white;
+    border-radius: 0px 0 16px 16px; */
+}
+/* ------------------------- BACKGROUNDS */
+.bg{
+    background: linear-gradient(to bottom, #EAF1F7, #C2B398);
+    /* margin-bottom:50px; */
+    padding-top: 50px;
+}
+.bg-about{
+    background: linear-gradient(to bottom, #E9EFF4, #C2B398);
+    padding-top: 50px;
+}
+.bg-attractions{
+    background: linear-gradient(to bottom, #E9EFF4, #BFC2B4);
+    padding-top: 50px;
+    
+}
+.bg-reserve{
+    background: linear-gradient(to bottom, #EAF1F7, #C2B398);
+    padding-top: 10px;
+}
+
+/* ------------------------- HEADERS */
+h1{ /* center*/
+    font-family: "Amatic SC";
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+h2{
+    padding: 20px;
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 24px;
+    font-weight: 700;
+    height: 50px;
+}
+
+h3{ /*left*/
+    font-family: "Amatic SC";
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+}
+
+h4{
+    font-family: "Amatic SC";
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    padding-top: 40px;
+    
+}
+h5{ /*left footer*/
+    font-family: "Amatic SC";
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+}
+
+@media (max-width: 600px){
+    h1{font-size: 30px;
+    text-align: left;
+margin-left: 50px;}
+    h3{
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    h5{font-size: 30px;}
+    h4{
+        margin-bottom: 50px;
+        font-size: 30px;
+        margin-left: 50px;
+        padding-top: 0px;
+        
+    }
+}
+/* ------------------------- BUTTONS */
+.button-green{
+    height:35px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    font-size: 22px;
+    cursor:pointer;
+    width: 300px;
+
+    background-color: #2F3A10;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.button-green:hover{
+background-color: #087808;
+transition: 1.2s;
+}
+
+.button-green-2{
+    background-color: #2F3A10;
+    width: 497px;
+    height: 40px;
+    padding-top: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+.button-green-2:hover{
+background-color: #087808;
+transition: 1.2s;
+}
+
+.button-green-3{
+    background-color: #2F3A10;
+    width: 300px;
+    height: 40px;
+    padding-top: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-top: 120px;
+}
+.button-green-3:hover{
+background-color: #087808;
+transition: 1.2s;
+}
+#img-button{
+    margin-top: 160px; /* Adjust the margin to create space between h1 and a */
+    background: #BB8B38;
+    height:35px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    font-size: 22px;
+    color: #1F311F;
+    cursor:pointer;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: "Nunito";
+}
+#img-button:hover{
+    background-color: #DCAF67;
+    transition: 1.2s;
+    color:white;
+}
+
+.center{
+    margin:auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 600px){
+    .button-green{
+        width: 300px;
+        height: 40px;
+        padding-top: 15px;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        color: white;
+        border-radius: 16px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+       
+    }
+    .button-green-2{
+            width: 400px;
+            height: 40px;
+            padding-top: 15px;
+            font-family: "Nunito", sans-serif;
+            font-size: 16px;
+            color: white;
+            border-radius: 16px;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+           
+
+    }
+    .button-green-3{
+        width: 300px;
+        height: 40px;
+        padding-top: 15px;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        color: white;
+        border-radius: 16px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+       
+
+}
+    .center{
+        margin-top: 10px;
+        text-align: left;
+    }
+}
+/* ------------------------- HEADER WEBSITE */
+.header-bg {
+    background-color: #EAF1F7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Set a high z-index to ensure the header appears above other content */
+    transition: background-color 0.4s ease-in; /* Add a smooth transition effect */
+}
+
+.header img {
+    width: 85%;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+    padding: 0px;
+    transition:ease-in-out ; 
+    margin-bottom:0px;
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a{
+    /* padding: 16px 0px; */
+    display: inline-block;
+    color: #000000;
+    font-size: 28px;
+    position: relative;
+    font-family: 'Amatic SC';
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.header-menu a:after{
+    content: "";
+    display:block;
+    height: 2px;
+    width: 0%;
+    background: #1F311F;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover:after{
+    width: 100%;
+
+}
+/* @media (max-width: 800px){
+    .header-menu{
+        gap:20px;
+    }
+    .header-menu a {
+        background-color: #1111;
+        padding: 12px 16px;
+        border-radius: 4px;
+    }
+    .header-menu a:hover{
+        background: #fff;
+    }
+    .header a:after{
+        display:none;
+    }
+} */
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+.bar1 {
+    width: 15px;
+    height: 3px;
+    background-color: #1F311F;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.bar2 {
+    width: 30px;
+    height: 3px;
+    background-color: #1F311F;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.bar3{
+    width: 15px;
+    height: 3px;
+    background-color: #1F311F;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-left:15px;
+}
+
+/* Add the personalized styles for the active burger menu */
+.burger-menu.active .bar1 {
+    transform: rotate(-45deg) translate(-12px, 10px);
+    background-color:#BB8B38;
+    width: 30px;
+}
+
+.burger-menu.active .bar2 {
+    opacity: 0;
+}
+
+.burger-menu.active .bar3 {
+    transform: rotate(45deg) translate(-12px, 10px);
+    background-color:#BB8B38;
+    width: 30px;
+}
+
+
+/* Mobile styles */
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+    .header{
+    height: 90px;
+    }
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust as needed to avoid overlapping the header */
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background: linear-gradient(to top, #EAF1F7, #BFC2B4);
+        z-index: 1000;
+        gap: 5px;
+    }
+    .header-menu a {
+        padding-left: 100px;
+        font-size: 28px;
+        display:block;
+    }
+
+    
+    .header-menu a:after{
+      display: none;
+    }
+    
+   
+    .header-menu.show {
+        display: flex;
+    }
+    .header-bg{
+        margin-bottom: 100px;
+    }
+    #logo-img {
+       padding: 10px;
+content: url('../Images/logomobile.svg'); /* Change to the desired mobile logo URL */
+
+margin-left: 50px;
+max-width: 120%;
+
+    }
+}
+
+
+
+/* ------------------------------------------------- HOME PAGE */
+.img {
+    position: relative;
+}
+
+#heroimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#img-title,
+#img-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#img-title {
+    font-family: "Amatic SC";
+    font-weight: 700;
+    font-size: 56px;
+}
+
+#img-button {
+    font-size: 18px;
+}
+
+
+
+/* ------------------------- ABOUT */
+.about-section {
+    opacity: 0;
+    transform: translateY(20px); /* Initial position, adjust as needed */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.structure,
+.attractions,
+.gallery,
+.bg {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+.about-section.appear,
+.structure.appear,
+.attractions.appear,
+.gallery.appear,
+.bg.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.map {
+    position: absolute;
+    bottom: -150px; /* Adjust the value as needed to overlap the map with the image */
+    left: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+.leaf-falling img {
+    position: absolute;
+    max-width: 10%;
+    height: auto;
+    animation: fallAnimation 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    /* Adjust the duration and cubic-bezier values as needed */
+}
+
+/* Position the images */
+.leaf-falling1 {
+    top: -200px; /* Start the leaf above the viewport */
+    left: 50px; /* Adjust the left position as needed */
+}
+
+@keyframes fallAnimation {
+    to {
+        top: 1500px; /* Adjust the final position where the leaf should fall to */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 100px;
+        margin-top: 0px;
+    }
+    #about-text-2{
+        font-size: 14px;
+    }
+   
+    .map {
+        position: static; /* Change position to static for better responsiveness */
+        margin-top: 20px;
+        box-shadow: none;
+    }
+
+    /* Adjust the width and height for mobile screens */
+    .map iframe {
+        margin-left: 50px;
+        margin-bottom: 100px;
+        width: 75%; /* Set the iframe width to 100% of its container */
+        height: 300px; /* Adjust the desired height for mobile screens */
+    }
+}
+
+
+/* ------------------------- FACILITIES */
+.structure{  display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px; 
+}
+ ul{
+    margin-top: 30px;
+ }
+ ul li{
+    margin-bottom: 15px;
+    margin-top: 30px;
+ }
+hr{
+    background-color: #2F3A10;
+    width: 470px;
+    border: 0px;
+    height: 2px;
+ 
+}
+.colored-svg{
+    fill:#1F311F;
+    padding: 5px;
+}
+
+.list{
+    font-family: "Nunito";
+}
+
+
+@media screen and (max-width: 768px) {
+td{
+    font-size: 16px;
+}
+.colored-svg{
+    max-width: 75%;
+}
+table {
+    width: 200px; /* Sum of the specified column widths */
+    font-size: 16px;
+
+  }
+
+  td, th {
+    border: none; /* Optional: Adds borders to the cells */
+    border-bottom: 2px solid #BB8B38;
+    height: 76px;
+  }
+#facilities-img{
+    display:none;
+}
+}
+/* ------------------------- ATTRACTIONS */
+/* .card{
+    width:372px;
+    height: 768px;
+    background: #C2B398;
+    border-radius: 16px;
+    margin-bottom: 50px;
+} */
+.card:hover{ 
+    background-color: #C0A576;
+    transition: 1.2s;
+}
+.card p{
+    padding: 20px;
+    font-size: 14px;
+}
+.card hr{
+    color: #1F311F;
+    width: 200px;
+    border: 1px solid #1F311F;
+    margin-top:20px;
+}
+
+
+.attractions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.card {
+    flex: 1 0 102px; /* Use flex property to allow flexibility in width */
+    max-width: 70%; /* Allow cards to take full width on smaller screens */
+    background: #C2B398;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Rest of your .card styles */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #button-green-center{
+        margin-left: 135px;
+    }
+    .card {
+        margin: auto;
+        flex: 1 0 100%; /* Make cards take full width on smaller screens */
+    }
+}
+
+
+/* ------------------------- GALLERY */
+.gallery{
+    margin-bottom: 0px;
+    margin-top: 140px;
+    
+}
+.gallery img{
+    width: 100%;
+
+}
+
+.gallery-button-left,
+.gallery-button-right {
+    position: absolute;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 25%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s;
+}
+
+.gallery-button-left {
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.gallery-button-right {
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
+.gallery-button-left:hover,
+.gallery-button-right:hover {
+    background-color: #DCAF67;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery-button-left,
+    .gallery-button-right {
+        position: absolute;
+        font-size: 20px;
+        background: none;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        border-radius: 25%;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: background-color 0.3s;
+    }
+    
+    
+}
+
+
+/* ------------------------- RESERVE */
+form{
+    font-family: "Nunito";
+    font-size: 20px;
+
+}
+.label-block{
+    display:block;
+}
+input{
+border: 1px solid #1F311F;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+margin-bottom: 20px;
+background-color: rgba(255, 255, 255, 0.5); /* Use rgba with an alpha value for transparency */
+font-size: 16px;
+font-family: "Nunito";
+}
+label{display:block;}
+
+.input-larger {
+    width: 500px;
+    height: 40px;
+
+}
+
+.input-smaller {
+    width: 226px;
+    height: 40px;
+}
+input:focus {
+    outline: none;}
+
+.input-flex{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.reserve{
+    display:flex;
+    justify-content:space-evenly;
+    gap: 40px;
+    /* padding-left: 150px; */
+    /* padding-right:500px; */
+    padding-bottom: 140px;
+}
+.reserve-page-home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding-bottom:0px;
+}
+
+
+.italic{
+    font-style:italic;
+}
+
+#title{
+    font-family: "Nunito";
+    font-size: 24px;
+    font-weight: 700px;
+    text-align: right;
+    margin-bottom:5px;
+}
+.reserve-info{
+    margin-bottom: 10px;
+}
+
+/* ------------------------- FOOTER */
+footer{
+ padding-top: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #C2B398;
+    padding-bottom:50px;
+    padding-left: 150px;
+
+    gap: 500px;
+}
+
+#about-text{
+    margin-bottom: 40px;
+    padding: 50px;
+}
+#about-text-2{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px){
+    footer{
+        gap: 100px;
+        padding-left: 40px;
+    }
+}
+
+/* --------------------------------------------------------------------------- ABOUT PAGE */
+
+/* ------------------------- About */
+/* Fade in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about-page-about{
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+
+}
+.about-page-text{
+    width: 678px;
+    margin-bottom:50px;
+    font-family: "Nunito";
+}
+
+.about-page-how{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about-page-ul li{
+    list-style-type:disc;
+    margin: 10px;
+    font-family: "Nunito";
+}
+
+
+
+.about-page-images img {
+    position: absolute;
+    max-width: 10%;
+    height: auto;
+}
+
+/* Position the images */
+.leaf1 {
+    top: 750px; /* Adjust the top position as needed */
+    left: 1000px; /* Adjust the left position as needed */
+}
+
+.leaf2 {
+    top:600px;
+    bottom: 50px; /* Adjust the bottom position as needed */
+    right: 50px; /* Adjust the right position as needed */
+}
+
+@media screen and (max-width: 768px) {
+    .about-page-about {
+        width: 100%;
+        padding-bottom: 20px;
+
+
+    }
+    .leaf1 {
+        top: 750px; /* Adjust the top position as needed */
+        left: 50px; /* Adjust the left position as needed */
+    }
+    
+    .about-page-text {
+        width: 80%; /* Adjust the width as needed */
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
+    .about-page-how {
+        width: 90%;
+        margin-top: 20px; /* Adjust the top margin as needed */
+        margin-bottom: 50px; /* Adjust the bottom margin as needed */
+    }
+    .about-page-ul{
+        padding-left: 40px;
+    }
+    .button-about{
+        margin-left: 50px;
+        margin-bottom: 90px;
+    }
+
+    
+}
+
+
+
+/* ------------------------------------------------- FAQ PAGE */
+
+.faq-page{
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.faq-page-box{
+    width: 678px;
+    height: 400px;
+    background-color: #BFC2B4;
+    border-radius: 16px;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+
+}
+
+.faq-page-text{
+    padding-left: 15px;
+    font-family:"Nunito";
+}
+#bold{
+    font-weight: 700;
+}
+.faq-page-faq{
+    width: 850px;
+    font-family: "Nunito";
+}
+.question{
+    margin-bottom: 20px;
+    cursor: grab;
+}
+#bold:hover{
+    color:#2F3A10;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+}
+.leaf1-1 {
+    top: 780px; /* Adjust the top position as needed */
+    right: 400px; /* Adjust the left position as needed */
+    transform:rotate(360deg); 
+}
+
+.leaf2-2 {
+    top:600px;
+    bottom: 50px; /* Adjust the bottom position as needed */
+    right: 80px; /* Adjust the right position as needed */
+  
+}
+
+@media screen and (max-width: 768px) {
+
+.faq-page{
+    width:100%;
+}
+
+    .faq-page-faq{
+        width: 400px;
+        font-family: "Nunito";
+        margin: auto;
+        padding-top: 60px;
+    }
+    .question{
+        margin-bottom: 20px;
+      
+    }
+ 
+.faq-page-box{
+    width: 478px;
+    height: 450px;
+    background-color: #BFC2B4;
+    border-radius: 16px;
+    padding-left: 15px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+
+}
+/* ------------------------------------------------- FACILITIES PAGE */
+.structure-page{
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.structure-page-list{
+    width: 1100px;
+    margin: auto;
+
+}
+.structure-page-list-2 ul{
+width: 450px;
+}
+.structure-page-list-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+table {
+    width: 529px; /* Sum of the specified column widths */
+    border-collapse: collapse;
+    font-family: "Nunito";
+
+  }
+
+  td, th {
+    border: none; /* Optional: Adds borders to the cells */
+    border-bottom: 2px solid #BB8B38;
+    height: 76px;
+  }
+
+  td:first-child, th:first-child {
+    width: 67px;
+  }
+
+  td:nth-child(2), th:nth-child(2) {
+    width: 382px;
+  }
+
+  #water{
+    margin-left: 10px;
+  }
+  #grass{
+    padding-bottom: 8px;
+  }
+
+  .img-structure {
+    width: 100%;
+    margin-top: 140px;
+
+
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .structure-page-list-2 {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: center; /* Center children in column layout */
+        gap: 0px;
+        padding: 30px;
+    
+    }
+    #water{
+        width: 30%;
+    }
+    .colored-svg{
+        width: 50%;
+    }
+    .structure-page-list{
+        width: 100vh;
+    
+    }
+    td, th {
+        font-size: 14px;
+        border-bottom: 1px solid #BB8B38;
+    
+    }
+
+    .structure-page-list-2 div {
+        width: 100%; /* Full width for each child on smaller screens */
+        margin-bottom: 20px; /* Add some margin between child elements */
+    
+    }
+  
+    .structure-page{
+        width: 100vh;
+        box-sizing: border-box;
+     
+    }
+    
+}
+
+/* ------------------------------------------------- ATTRACTIONS PAGE */
+
+.attractions-div{
+    width: 1200px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hidden-container {
+    display:none;
+    /* display:flex; */
+  }
+
+  .hidden {
+    display: none;
+  }
+#attractions-footer{
+    padding-top: 20px;
+    margin-top: 50px;
+    background-color: #BFC2B4;
+}
+
+.card-page {
+    width: 372px;
+    height: 768px;
+    background: #C2B398;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    opacity: 0; /* Initially hide cards */
+    transition: opacity 1s ease-in-out; /* Add a smooth transition effect */
+}
+
+.card-page.visible {
+    opacity: 1; /* Make cards visible when the 'visible' class is added */
+}
+
+.card-page:hover{ 
+    background-color: #C0A576;
+    transition: 1.2s;
+}
+.card-page p{
+    padding: 20px;
+    font-size: 14px;
+}
+.card-page hr{
+    color: #1F311F;
+    width: 200px;
+    border: 1px solid #1F311F;
+    margin-top:20px;
+}
+.card-page img{
+    width: 100%;
+}
+
+.attractions-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;}
+
+@media screen and (max-width: 768px) {
+    .card-page{
+        width:320px;
+        height: 768px;
+        background: #C2B398;
+        border-radius: 16px;
+        margin-bottom: 50px;
+    } 
+    
+    .attractions-div {
+        width: 100%;
+        margin-left: 100px;
+    }
+
+}
+/* ------------------------------------------------- RESERVE PAGE */
+.reserve-page{
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.reserve-page-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding-bottom:100px;
+}
+
+.reserve-page-img{
+    margin-bottom:0px;
+}
+
+@media screen and (max-width: 768px) {
+    form{
+        font-size: 16px;
+        margin: auto;
+        padding-right: 60px;
+        margin-bottom: 40px;
+    }
+
+    input{
+    font-size: 14px;
+    }
+
+    .input-larger {
+        width: 400px;
+    }
+    
+    .input-smaller {
+        width: 170px;
+    }
+    
+    
+ 
+    .reserve-page{
+        width: 100%;
+    }
+
+    .reserve-page-form{
+        gap:20px;
+        padding-bottom:60px;
+    }
+
+    .reserve-info
+    {
+    
+        margin-left: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+  
+}
+/* ------------------------------------------------- GALLERY PAGE */
+.gallery-page{
+    padding-bottom: 100px;
+
+    
+}
+.gallery-page img{
+    width: 100%;
+
+}
+
+.gallery-page-button-left,
+.gallery-page-button-right {
+    position: absolute;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 25%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s;
+}
+
+.gallery-page-button-left {
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.gallery-page-button-right {
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
+.gallery-page-button-left:hover,
+.gallery-page-button-right:hover {
+    background-color: #DCAF67;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery-page-button-left,
+    .gallery-page-button-right {
+        position: absolute;
+        top: 40%;
+        font-size: 20px;
+        background: none;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        border-radius: 25%;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: background-color 0.3s;
+    }
+    .image-container{
+        margin-top: 50px;
+        margin-bottom: 0px;
+       
+    }
+    .bg-about{
+        margin-top: 40px;
+
+    }
+    .gallery-page{
+        margin-top: 0px;
+    }
+    
+}

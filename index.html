@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:ital,wght@0,400;0,600;1,500&family=Nunito:wght@400;500;700&family=Playfair+Display&family=Space+Mono&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <title>Camping PachaMama</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-bg" id="header">
+        <div class="header">
+            <a href="index.html" id="logo"><img src="./Images/Logo.svg" alt="logo" id="logo-img"></a>
+    
+            <nav aria-label="primary">
+                <ul class="header-menu">
+                    <li><a href="./Pages/about.html">About</a></li>
+                    <li><a href="./Pages/structure.html">Facilities</a></li>
+                    <li><a href="./Pages/attractions.html">Attractions</a></li>
+                    <li><a href="./Pages/gallery.html">Gallery</a></li>
+                    <li><a href="./pages/reserve.html"><span id="reserve">Reserve</span></a></li>
+                </ul>
+            </nav>
+    
+            <!-- Burger menu icon for mobile -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- MAIN IMAGE -->
+    <main class="hero-img fade-in">
+        <div class="img">
+            <img id="heroimg" src="./Images/heroimg.png" alt="Image of morro da baleia">
+            <h1 id="img-title" class="hidden">The Mother Nature Camping</h1>
+            <a id="img-button" class="hidden" href="./Pages/reserve.html">Make your reservation</a>
+        </div>
+    </main>
+
+    <!-- ABOUT SECTION -->
+    <div class="about-section">
+        <section class="about">
+            <div class="about-image"> <img src="./Images/about-img.png" alt="Camping and tents"> </div>
+            <div class="map fade-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19052.37364446352!2d-47.65862669676781!3d-14.145821836468619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9345763bfd3b6a25%3A0xb495529408e0df60!2sCamping%20PachaMama!5e0!3m2!1spt-BR!2sca!4v1701213050923!5m2!1spt-BR!2sca"
+                    width="540" height="246" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="about-description">
+                <div id="about-text">
+                    <h3>Welcome to PachaMama Camping</h3>
+                    <p id="about-text-2">Your gateway to a serene and picturesque camping experience in the heart of Chapada dos Veadeiros.
+                        Nestled high above, our campsite offers breathtaking views overlooking the iconic Morro da Baleia, a
+                        natural wonder that graces the Chapada landscape.</p>
+                    <div id="button-green">
+                        <a href="#" class="button-green">Get to Know Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- FACILITIES SECTION -->
+    <h1>Facilities</h1>
+    <div class="structure">
+
+        <div>
+
+
+            <table>
+
+                <tbody>
+                    <tr>
+                        <td><img class="colored-svg" src="./Images/parking-icon.svg" alt="Parking icon">
+                        </td>
+                        <td>Free Indoor Parking</td>
+                    </tr>
+                    <tr>
+                        <td><img class="colored-svg" src="./Images/lucide_tent-tree.svg" alt="Tent icon">
+                        </td>
+                        <td>2,000 m2 of emerald grass
+                            + 40m² coverage with power point</td>
+                    </tr>
+                    <tr>
+                        <td><img class="colored-svg" src="./Images/arcticons_wifi.svg" alt="Wifi icon">
+                        </td>
+                        <td>Wi Fi - Rural Internet with limited
+                            connection</td>
+                    </tr>
+                    <tr>
+                        <td><img class="colored-svg" src="./Images/guidance_kitchen.svg"
+                                alt="Kitchen icon"></td>
+                        <td>Kitchen with sink, stove, cooktop
+                            and refrigerator</td>
+                    </tr>
+                    </tbody>
+                    </table>
+
+            <div class="center">
+                <a href="#" class="button-green-3">Check All We Offer</a>
+            </div>
+        </div>
+
+
+        <div>
+            <img id="facilities-img" src="./Images/Structure-Image.png" alt="">
+        </div>
+    </div>
+
+    <!-- LEAF -->
+    <div class="leaf-falling">
+        <img src="./Images/About-Page/leaf1.png" class="leaf-falling1">
+        </div>
+
+
+    <!-- ATTRACTIONS SECTION -->
+    <h1>Attractions</h1>
+    <div class="attractions">
+
+        <div class="card">
+            <h2>​ALMECEGAS I AND II WATERFALLS</h2>
+            <img src="./Images/attraction1.png" alt="Almecegas I and II Waterfalls">
+
+            <hr>
+            <p>
+                1.8 km and 300 m trail. Before arriving at Almécegas I you can see the waterfall from the front, it
+                is a beautiful view and it is also possible to take a bath, it falls in the shape of a wedding veil,
+                45 meters high. Deep, green and crystal clear waters. Almécegas II is not that big, but its well is
+                big and deep and the trail is easy. It is 9 km from PachaMama.
+            </p>
+            <hr class="bottom-hr">
+
+        </div>
+        <div class="card">
+            <h2>​SAO BENTO WATERFALL</h2>
+            <img src="./Images/attraction2.png" alt="Sao Bento Waterfall">
+
+            <hr>
+            <p>
+                Short trail of 200 m.
+                It is formed by the Couros River and has a large, deep natural pool for swimming, as well as some
+                small pools for swimming in during the dry season. It is 9 km from PachaMama.
+            </p>
+            <hr class="bottom-hr">
+
+        </div>
+        <div class="card">
+            <h2>​ANJOS E ARCANJOS WATERFALL</h2>
+            <img src="./Images/attraction3.png" alt="Anjos e Arcanjos Waterfalls">
+
+            <hr>
+            <p>
+                The trail of more than 2 km is not long, but difficult. Two great waterfalls, although their waters
+                are very clean, they are dark in color like Coca-Cola due to the high concentration of tannin
+                (vegetable compound), creating a beautiful effect in the sunlight. It is 12 km from Alto Paraíso in
+                the village of Moinho.</p>
+            <hr class="bottom-hr">
+
+        </div>
+
+    </div>
+    <div class="center">
+        <a href="./Pages/attractions.html" id="button-green-center" class="button-green">More attractions</a>
+    </div>
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="image-container">
+            <img id="mainImage" src="./Images/gallery1.png" alt="Gallery Image 1">
+            <button class="gallery-button-left" id="prevBtn" onclick="changeImage(-1)">❮</button>
+            <button class="gallery-button-right" id="nextBtn" onclick="changeImage(1)">❯</button>
+        </div>
+    </div>
+
+    <!-- RESERVE SECTION -->
+    <div class="bg">
+        <h1>Reserve</h1>
+        <div class="reserve">
+           
+            <div class="reserve-page reserve-page-home">
+
+                <form>
+                    <label class="label-block" for="name">Name:</label>
+                    <input class="input-larger" type="text" id="name" name="name"><br>
+                    <label class="label-block" for="email">Email:</label>
+                    <input class="input-larger" type="email" id="email" name="email"><br>
+
+                    <div class="input-flex">
+                        <div>
+                            <label class="label-block" for="arrival">Arrival Date:</label>
+                            <input class="input-smaller" type="date" id="arrival" name="arrival">
+                        </div>
+
+
+                        <div>
+                            <label class="label-block" for="departure">Departure Date:</label>
+                            <input class="input-smaller" type="date" id="departure" name="departure">
+                        </div>
+                    </div>
+
+                    <div class="input-flex">
+                        <div>
+                            <label class="label-block" for="adults">Adults:</label>
+                            <input class="input-smaller" type="number" id="adults" name="adults"><br>
+                        </div>
+
+                        <div>
+                            <label class="label-block" for="children">Children:</label>
+                            <input class="input-smaller" type="number" id="children" name="children"><br>
+                        </div>
+
+                    </div>
+                    <a href="#" class="button-green-2">Reserve</a>
+                </form>
+                </section>
+
+
+                <section>
+                    <div class="reserve-info">
+                        <span id="title">Address</span>
+                        <p>Alto Paraíso de Goiás - GO</p>
+                        <p>Chapada dos Veadeiros</p>
+                        <p>73770-000</p>
+                    </div>
+                    <div class="reserve-info">
+                        <span id="title">Rates</span>
+                        <p class="italic">Normal Daily Value:</p>
+                        <p>R$70.00 per person;</p>
+                        <p>R$ 100.00 per person on holidays;</p>
+                        <p>R$50.00 per child up to 12 years old</p>
+
+                        <p class="italic">Motorhome: </p>
+                        <p>R$ 90.00 per person</p>
+                    </div>
+                    <div class="reserve-info">
+                        <span id="title">Hours</span>
+                        <p>Check in - 9am to 9 pm</p>
+                        <p>Check out - 16pm </p>
+                    </div>
+                </section>
+            </div>
+    </div>
+
+    </div>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div>
+            <h3>Location</h3>
+            <p>Alto Paraiso de Goias - GO</p>
+            <p>Chapada dos Veadeiros</p>
+            <p>73770-000</p>
+
+        </div>
+
+        <div>
+            <h3>Stay Connected</h3>
+           <a href="https://www.facebook.com/campingpachamamaoficial?ref=bookmarks"> <img class="icons" src="./Images/facebook.svg"></a>
+            <a href="https://www.instagram.com/campingpachamama"><img class="icons" src="./Images/instagram.svg"></a>
+            <a href="https://www.youtube.com/channel/UC0NTI7tROJxKi1Zjcupasgg"> <img class="icons" src="./Images/youtube.svg"></a></div>
+        </div>
+    </footer>
+
+    </div>
+    </div>
+
+    </main>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

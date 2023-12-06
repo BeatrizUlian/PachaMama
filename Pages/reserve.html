@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:ital,wght@0,400;0,600;1,500&family=Nunito:wght@400;500;700&family=Playfair+Display&family=Space+Mono&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <title>Camping PachaMama - Reserve</title>
+</head>
+
+<body>
+     <!-- HEADER -->
+     <header class="header-bg" id="header">
+        <div class="header">
+            <a href="../index.html" id="logo"><img src="../Images/Logo.svg" alt="logo" id="logo-img"></a>
+    
+            <nav aria-label="primary">
+                <ul class="header-menu">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./structure.html">Structure</a></li>
+                    <li><a href="./attractions.html">Attractions</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./reserve.html"><span id="active-page">Reserve</span></a></li>
+                </ul>
+            </nav>
+    
+            <!-- Burger menu icon for mobile -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN IMAGE -->
+  
+
+        <main class="reserve-page-img bg-about">
+            <div class="img">
+                <img id="heroimg" src="../Images/Reserve-Page/Reserve-Image.png" alt="Image of morro da baleia">
+            </div>
+
+    <!-- RESERVE SECTION-->
+    <div class="bg-reserve">
+    <h4>Make your Reservation</h4>
+       
+            
+
+            <div class="reserve-page reserve-page-form fade-in">
+
+              
+                <form>
+                    <label class="label-block" for="name">Name:</label>
+                    <input class="input-larger" type="text" id="name" name="name"><br>
+                    <label class="label-block" for="email">Email:</label>
+                    <input class="input-larger" type="email" id="email" name="email"><br>
+
+                    <div class="input-flex">
+                        <div>
+                            <label class="label-block" for="arrival">Arrival Date:</label>
+                            <input class="input-smaller" type="date" id="arrival" name="arrival">
+                        </div>
+
+
+                        <div>
+                            <label class="label-block" for="departure">Departure Date:</label>
+                            <input class="input-smaller" type="date" id="departure" name="departure">
+                        </div>
+                    </div>
+
+                    <div class="input-flex">
+                        <div>
+                            <label class="label-block" for="adults">Adults:</label>
+                            <input class="input-smaller" type="number" id="adults" name="adults"><br>
+                        </div>
+
+                        <div>
+                            <label class="label-block" for="children">Children:</label>
+                            <input class="input-smaller" type="number" id="children" name="children"><br>
+                        </div>
+
+                    </div>
+                    <a href="#" class="button-green-2">Reserve</a>
+                </form>
+        
+
+                <section>
+                    <div class="reserve-info">
+                        <span id="title">Address</span>
+                        <p>Alto Paraíso de Goiás - GO</p>
+                        <p>Chapada dos Veadeiros</p>
+                        <p>73770-000</p>
+                    </div>
+                    <div class="reserve-info">
+                        <span id="title">Rates</span>
+                        <p class="italic">Normal Daily Value:</p>
+                        <p>R$70.00 per person;</p>
+                        <p>R$ 100.00 per person on holidays;</p>
+                        <p>R$50.00 per child up to 12 years old</p>
+
+                        <p class="italic">Motorhome: </p>
+                        <p>R$ 90.00 per person</p>
+                    </div>
+                    <div class="reserve-info">
+                        <span id="title">Hours</span>
+                        <p>Check in - 9am to 9 pm</p>
+                        <p>Check out - 16pm </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- FOOTER SECTION -->
+        <footer>
+            <div>
+                <h5>Location</h5>
+                <p>Alto Paraiso de Goias - GO</p>
+                <p>Chapada dos Veadeiros</p>
+                <p>73770-000</p>
+
+            </div>
+
+            <div>
+                <h5>Stay Connected</h5>
+                <img src="../Images/facebookicon.png">
+                <img src="../Images/instagramicon.png">
+                <img src="../Images/youtubeicon.png">
+            </div>
+        </footer>
+
+
+    </main>
+
+
+<script src="../Javascript/script.js"></script>
+</body>
+
+</html>
+
+

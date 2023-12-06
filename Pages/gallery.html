@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:ital,wght@0,400;0,600;1,500&family=Nunito:wght@400;500;700&family=Playfair+Display&family=Space+Mono&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <title>Camping PachaMama - Gallery</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-bg" id="header">
+        <div class="header">
+            <a href="../index.html" id="logo"><img src="../Images/Logo.svg" alt="logo" id="logo-img"></a>
+    
+            <nav aria-label="primary">
+                <ul class="header-menu">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./structure.html">Facilities</a></li>
+                    <li><a href="./attractions.html">Attractions</a></li>
+                    <li><a href="./gallery.html"><span id="active-page">Gallery</span></a></li>
+                    <li><a href="./reserve.html">Reserve</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Burger menu icon for mobile -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+
+   <main>
+
+      <!-- GALLERY SECTION -->
+      <div class="gallery-page bg-about fade-in">
+        <!-- <h1>Gallery</h1> -->
+        <div class="image-container">
+            <img id="mainImageGallery" src="../Images/gallery1.png" alt="Gallery Image 1">
+            <button class="gallery-page-button-left" id="prevBtn" onclick="changeImageGallery(-1)">❮</button>
+            <button class="gallery-page-button-right" id="nextBtn" onclick="changeImageGallery(1)">❯</button>
+        </div>
+    </div>
+   </main>
+
+          <!-- FOOTER SECTION -->
+          <footer>
+            <div>
+                <h5>Location</h5>
+                <p>Alto Paraiso de Goias - GO</p>
+                <p>Chapada dos Veadeiros</p>
+                <p>73770-000</p>
+    
+            </div>
+    
+            <div>
+                <h5>Stay Connected</h5>
+                <img src="../Images/facebookicon.png">
+                <img src="../Images/instagramicon.png">
+                <img src="../Images/youtubeicon.png">
+            </div>
+        </footer>
+    
+    
+
+    <script src="../Javascript/script.js"></script>
+    </body>
+    
+    </html>
+    
